@@ -8,6 +8,9 @@ on:
     - cron: "0 16 * * *"
   repository_dispatch:
     types: [gmeek-release]
+  push:
+    paths:
+      - 'config.json'
     
 jobs:
   build:
