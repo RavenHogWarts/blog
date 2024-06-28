@@ -6,6 +6,8 @@ on:
     types: [opened, edited]
   schedule:
     - cron: "0 16 * * *"
+  repository_dispatch:
+    types: [gmeek-release]
     
 jobs:
   build:
